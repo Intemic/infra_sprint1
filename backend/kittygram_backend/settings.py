@@ -1,11 +1,14 @@
 import os
 from pathlib import Path
 
-key = os.getenv('KITTY_KEY')
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = key
+SECRET_KEY = os.getenv('KITTY_KEY')
 
 DEBUG = False
 
