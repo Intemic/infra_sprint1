@@ -1,6 +1,6 @@
-IP: 158.160.67.170
-name_taski: https://yp.hopto.org/
-name_kittygram: https://ykitty.hopto.org/
-login: anton
-password: django_admin
+IP: 158.160.67.170;
+name_taski: https://yp.hopto.org/;
+name_kittygram: https://ykitty.hopto.org/;
+login: anton;
+password: django_admin;
 
