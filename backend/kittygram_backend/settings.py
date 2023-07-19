@@ -10,9 +10,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('KITTY_KEY', default='None')
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG_MODE', False)
 
-ALLOWED_HOSTS = ['158.160.67.170', '127.0.0.1', 'localhost', 'ykitty.hopto.org']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
