@@ -1,6 +1,7 @@
 
 server {
     server_name yp.hopto.org;
+    server_tokens off;    
 
     # Новый блок.
     location /admin/ {
@@ -33,6 +34,7 @@ server {
 
 server {
     server_name ykitty.hopto.org;
+    server_tokens off;
 
     # Новый блок.
     location /admin/ {
@@ -79,15 +81,9 @@ server {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-
-
     listen       80;
-    server_name ykitty.hopto.org;
+    server_name ykitty.hopto.org yp.hopto.org;
     return 404; # managed by Certbot
-
-    server_name yp.hopto.org;
-    return 404; # managed by Certbot
-
 }
 
 
