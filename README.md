@@ -53,10 +53,12 @@ python3 manage.py migrate
 Собрать frontend
 
 ```
-frontend/ 
-
+cd frontend/ 
+```
+```
 npm install
-
+```
+```
 npm run build
 ```
 
